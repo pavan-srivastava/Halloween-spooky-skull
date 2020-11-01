@@ -1,0 +1,18 @@
+https://maker.pro/raspberry-pi/tutorial/how-to-interface-a-pir-motion-sensor-with-raspberry-pi-gpio
+
+https://www.raspberrypi.org/forums/viewtopic.php?t=112006
+https://www.pygame.org/docs/ref/music.html#pygame.mixer.music.set_volume
+
+
+
+import pygame
+
+pygame.mixer.init()
+pygame.mixer.music.load("file.mp3")
+pygame.mixer.music.set_volume(1.0)
+pygame.mixer.music.play()
+
+while pygame.mixer.music.get_busy() == True:
+	pass
+
+
